@@ -24,7 +24,7 @@ class App extends React.Component {
     this.refresh();
   }
   refresh = () => {
-    const request = axios.get("http://172.28.38.59/main/country/");
+    const request = axios.get("https://www.the-arabian.com/main/country/");
     console.log(request);
     request.then((result) => {
       this.setState({ todolist: result.data.results, load: true });
